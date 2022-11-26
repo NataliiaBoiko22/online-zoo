@@ -9,50 +9,52 @@
   </head>
   <body>
     <div class="wrapper">
-      
-        <header class="header">
-          <div class="header__container" id="header">
-            <div class="first__logo">
-              <a href="index.html"
-                ><img src="assets/icons/logo.png" alt="logo"
-              /></a>
-            </div>
+      <header class="header">
+        <div class="header__container" id="header">
+          <div class="logo-h1">
+            <a href="index.html" class="logo"
+              >PetStory<br /><span>online</span></a
+            >
+          </div>
 
-            <nav class="header__menu menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a class="menu__link" aria-current="page" href="index.html"
-                    >About</a
-                  >
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Map</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Zoos</a>
-                </li>
-                <li class="menu__item menu__item--active">
-                  <a class="menu__link" href="#donation_information">Donate</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Contact us</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__ref">
-              <a
-                class="ref"
-                href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1"
-                >Designed by ©</a
-              >
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" aria-current="page" href="index.html"
+                  >About</a
+                >
+              </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Map</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Zoos</a>
+              </li>
+              <li class="menu__item menu__item--active">
+                <a class="menu__link" href="#donation_information">Donate</a>
+              </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__ref">
+            <a
+              class="ref"
+              href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1"
+              >Designed by ©</a
+            >
+            <div class="header-menu__burger">
+              <img src="assets/icons/burger_menu.svg" alt="burger_menu" />
             </div>
           </div>
-        </header>
+        </div>
+      </header>
      
 
       <main class="main__container">
-        <img src="assets/images/panda_bg.png" alt="Panda" />
-
+        <div class="imgpanda">
+        </div>
         <section class="how_it_works">
           <div class="information">
             <h1>
@@ -99,33 +101,35 @@
                 <p class="picker-text">Amount</p>
                 <div class="picker-inputs">
                   <div class="picker-inputs-container">
-                    <div>
+                    <div class="grid-item">
                       <input type="radio" name="amount" id="" value="$5000" />
                     </div>
-                    <div>
+                    <div class="grid-item">
                       <input type="radio" name="amount" id="" value="$2000" />
                     </div>
-                    <div>
+                    <div class="grid-item">
                       <input
                         type="radio"
                         name="amount"
                         id=""
                         value="$1000"
-                        checked="" />
+                        checked />
                     </div>
-                    <div>
+                    <div class="grid-item">
                       <input type="radio" name="amount" id="" value="$500" />
                     </div>
-                    <div>
+                    <div class="grid-item">
                       <input type="radio" name="amount" id="" value="$250" />
                     </div>
-                    <div>
-                      <input type="radio" name="amount" id="" value="$100" />
+                    <div class="grid-item ">
+                      <input type="radio" name="amount" id="" value="$100" >
                     </div>
-                    <div>
+    
+
+                    <div class="grid-item">
                       <input type="radio" name="amount" id="" value="$50" />
                     </div>
-                    <div>
+                    <div class="grid-item">
                       <input type="radio" name="amount" id="" value="$25" />
                     </div>
                   </div>
@@ -176,17 +180,36 @@
       <footer class="footer">
         <section class="footer-part">
           <div class="contacts-part">
-            <div>
-              <a href="index.html"
-                ><img src="assets/icons/logo.png" alt="logo"
-              /></a>
-            </div>
-            <div>
-              <form action="donate.html" target="_blank">
-                <button class="leave-button">donate for volunteers</button>
-              </form>
-            </div>
+            <div class="icon-part">
+              <h1 class="logo-h1 logo-footer">
+                <a href="index.html" class="logo"
+                  >PetStory<br /><span>online</span></a
+                >
+              </h1>
 
+              <div>
+                <form action="donate.html" target="_blank">
+                  <button class="leave-button donate-button">
+                    donate for volunteers
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="submit-part">
+              <div>
+                <div class="footer-text">Subscribe to our news</div>
+                <form>
+                  <input
+                    class="input-form"
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email" />
+                  <button type="submit" class="submit-btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="nav-part">
             <ul class="footer__socials">
               <li class="footer__social">
                 <a href="https://facebook.com" class="footer__social-link">
@@ -221,8 +244,6 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="nav-part">
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" aria-current="page" href="#">About</a>
@@ -237,19 +258,6 @@
                 <a class="menu__link" href="#">Contact us</a>
               </li>
             </ul>
-          </div>
-          <div class="submit-part">
-            <div>
-              <div class="footer-text">Subscribe to our news</div>
-              <form>
-                <input
-                  class="input-form"
-                  type="email"
-                  id="email"
-                  placeholder="Enter your email" />
-                <button type="submit" class="submit-btn">Submit</button>
-              </form>
-            </div>
             <div class="links">
               <a href="#" class="links__">Designed by Alisa Samborskaya</a>
               <a href="#" class="links__">©RSSchool & ©Yem Digital 2021</a>
@@ -257,6 +265,7 @@
           </div>
         </section>
       </footer>
+
     </div>
   </body>
 </html>
