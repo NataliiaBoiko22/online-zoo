@@ -34,7 +34,7 @@
                 <a class="menu__link" href="#donation_information">Donate</a>
               </li>
             <li class="menu__item">
-                <a class="menu__link" href="#">Contact us</a>
+                <a class="menu__link" href="#footer-part">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -49,6 +49,48 @@
             </div>
           </div>
         </div>
+        <div class="header__container_double" display="none">
+          <h1 class="logo-h1_double">
+            <a href="index.html" class="logo_double"
+              >PetStory<br /><span>online</span></a
+            >
+          </h1>
+
+          <nav class="header__menu_double menu_double">
+            <ul class="menu__list_double">
+              <li class="menu__item_double menu__item--active">
+                <a class="menu__link_double" aria-current="page" href="index.html"
+                  >About</a
+                >
+              </li>
+              <li class="menu__item_double">
+                <a class="menu__link_double" href="#">Map</a>
+              </li>
+              <li class="menu__item_double">
+                <a class="menu__link_double" href="#">Zoos</a>
+              </li>
+              <li class="menu__item_double">
+                <a class="menu__link_double" href="#donation_information">Donate</a>
+              </li>
+              <li class="menu__item_double">
+                <a class="menu__link_double" href="#footer-part">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__ref_double">
+            <a
+              class="ref_double"
+              href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1"
+              >Designed by ©</a
+            >
+            <div class="btn-x">
+              <button class="btn-x-box" type="reset">
+                <img src="assets/icons/x_icon.svg" alt="close" />
+              </button>
+            </div>
+          </div>
+        </div>
+
       </header>
      
 
@@ -102,35 +144,32 @@
                 <div class="picker-inputs">
                   <div class="picker-inputs-container">
                     <div class="grid-item">
-                      <input type="radio" name="amount" id="" value="$5000" />
+                      <input type="radio" name="amount" value="$5000" />
                     </div>
                     <div class="grid-item">
-                      <input type="radio" name="amount" id="" value="$2000" />
+                      <input type="radio" name="amount" value="$2000" />
                     </div>
                     <div class="grid-item">
                       <input
                         type="radio"
-                        name="amount"
-                        id=""
+                        name="amount"              
                         value="$1000"
-                        checked />
+                    />
                     </div>
                     <div class="grid-item">
-                      <input type="radio" name="amount" id="" value="$500" />
+                      <input type="radio" name="amount" value="$500" />
                     </div>
                     <div class="grid-item">
-                      <input type="radio" name="amount" id="" value="$250" />
-                    </div>
-                    <div class="grid-item ">
-                      <input type="radio" name="amount" id="" value="$100" >
-                    </div>
-    
-
-                    <div class="grid-item">
-                      <input type="radio" name="amount" id="" value="$50" />
+                      <input type="radio" name="amount" value="$250" />
                     </div>
                     <div class="grid-item">
-                      <input type="radio" name="amount" id="" value="$25" />
+                      <input type="radio" name="amount" value="$100" checked>
+                    </div>
+                    <div class="grid-item">
+                      <input type="radio" name="amount" value="$50" />
+                    </div>
+                    <div class="grid-item">
+                      <input type="radio" name="amount" value="$25" />
                     </div>
                   </div>
                 </div>
@@ -141,7 +180,7 @@
               <div class="another-amount">
                 
 
-                 <input type="number" class="text-body" min="1" max="9999" placeholder="Another amount" aria-controls="disabled">
+                 <input type="number" id="anotherAmount" class="text-body" min="1" max="9999" placeholder="Another amount" aria-controls="disabled">
                 <img src="assets/icons/dollar.svg" alt="dollar">
               </div> 
 
@@ -178,7 +217,7 @@
         </section>
       </main>
       <footer class="footer">
-        <section class="footer-part">
+        <section class="footer-part" id="footer-part">
           <div class="contacts-part">
             <div class="icon-part">
               <h1 class="logo-h1 logo-footer">
@@ -267,5 +306,9 @@
       </footer>
 
     </div>
+    <div class="overlay"></div>
+
+    <script src="donate.js"></script>
+
   </body>
 </html>

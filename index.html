@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<div lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,7 +33,7 @@
                 <a class="menu__link" href="donate.html">Donate</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Contact us</a>
+                <a class="menu__link" href="#footer-part">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -45,6 +45,47 @@
             >
             <div class="header-menu__burger">
               <img src="assets/icons/burger_menu.svg" alt="burger_menu" />
+            </div>
+          </div>
+        </div>
+        <div class="header__container_double" display="none">
+          <h1 class="logo-h1_double">
+            <a href="index.html" class="logo_double"
+              >PetStory<br /><span>online</span></a
+            >
+          </h1>
+
+          <nav class="header__menu_double menu_double">
+            <ul class="menu__list_double">
+              <li class="menu__item_double menu__item--active">
+                <a class="menu__link_double" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+              <li class="menu__item_double">
+                <a class="menu__link_double" href="#">Map</a>
+              </li>
+              <li class="menu__item_double">
+                <a class="menu__link_double" href="#">Zoos</a>
+              </li>
+              <li class="menu__item_double">
+                <a class="menu__link_double" href="donate.html">Donate</a>
+              </li>
+              <li class="menu__item_double">
+                <a class="menu__link_double" href="#footer-part">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__ref_double">
+            <a
+              class="ref_double"
+              href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1"
+              >Designed by ©</a
+            >
+            <div class="btn-x">
+              <button class="btn-x-box" type="reset">
+                <img src="assets/icons/x_icon.svg" alt="close" />
+              </button>
             </div>
           </div>
         </div>
@@ -97,12 +138,12 @@
 
         <section class="animal-card">
           <div class="circle-button">
-            <button class="slider-btn slider-btn--left">
+            <button class="slider-btn slider-btn--left" id="prev">
               <img src="assets/icons/vector_right.svg" alt="left arrow" />
             </button>
           </div>
-          <div class="animal-table">
-            <div class="gallery-grid">
+          <div class="animal-table" id="carousel">
+            <div class="gallery-grid content" >
               <div class="grid-item">
                 <div class="grid-item__inner">
                   <img
@@ -121,7 +162,7 @@
                 </div>
               </div>
             </div>
-            <div class="gallery-grid">
+            <div class="gallery-grid content" >
               <div class="grid-item">
                 <div class="grid-item__inner">
                   <img
@@ -140,7 +181,7 @@
                 </div>
               </div>
             </div>
-            <div class="gallery-grid">
+            <div class="gallery-grid content" >
               <div class="grid-item">
                 <div class="grid-item__inner">
                   <img
@@ -160,7 +201,7 @@
               </div>
             </div>
 
-            <div class="gallery-grid">
+            <div class="gallery-grid content" >
               <div class="grid-item">
                 <div class="grid-item__inner">
                   <img
@@ -179,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <div class="gallery-grid">
+            <div class="gallery-grid content" >
               <div class="grid-item">
                 <div class="grid-item__inner">
                   <img
@@ -198,7 +239,7 @@
                 </div>
               </div>
             </div>
-            <div class="gallery-grid">
+            <div class="gallery-grid content" >
               <div class="grid-item">
                 <div class="grid-item__inner">
                   <img
@@ -217,9 +258,29 @@
                 </div>
               </div>
             </div>
+            <div class="gallery-grid content" >
+              <div class="grid-item">
+                <div class="grid-item__inner">
+                  <img
+                    src="assets/images/foto-card7.png"
+                    alt="Alligators"
+                    class="grid-item__img" />
+                  <div class="grid-item__title">
+                    <span class="info-card-animal-text">Alligators</span>
+                    <span class="info-card-animal-text2">
+                      Native to Southeastern U. S.
+                      <img
+                        src="assets/icons/meet-fish_icon.png"
+                        alt="meet-fish" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
           <div class="circle-button">
-            <button class="slider-btn slider-btn--right">
+            <button class="slider-btn slider-btn--right" id="next">
               <img src="assets/icons/vector_left.svg" alt="right arrow" />
             </button>
           </div>
@@ -315,10 +376,10 @@
         </section>
 
         <section class="testimonials">
-          <div class="testimonials_card">
+          <div class="testimonials_card-main carousel" id="carousel">
             <div class="testimonials_title">Testimonials</div>
-            <div class="testimonials__cards">
-              <div class="testimonials__card">
+            <ul class="testimonials__cards " >
+              <li class="testimonials__card">
                 <div class="testimonials__card-bg">
                   <div class="testimonials__card-header">
                     <img
@@ -332,7 +393,7 @@
                       </p>
                     </div>
                   </div>
-                  <p class="testimonials__card-desc">
+                  <p class="testimonials__card-desc ">
                     The best online zoo I’ve met. My son delighted very much
                     ljves to watch gouillas. Online zoo is one jf the ways to
                     instill a love for animals.The best online zoo I’ve met. My
@@ -345,8 +406,43 @@
                     is one jf the ways to instill a love for animals.
                   </p>
                 </div>
-              </div>
-              <div class="testimonials__card">
+                <div class="pop__block" display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header-double">
+                      <img
+                        src="assets/icons/testimonial1.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">Michael John</h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Today
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc ">
+                      The best online zoo I’ve met. My son delighted very much
+                      ljves to watch gouillas. Online zoo is one jf the ways to
+                      instill a love for animals.The best online zoo I’ve met. My
+                      son delighted very much ljves to watch gouillas. Online zoo
+                      is one jf the ways to instill a love for animals. <br />
+                      The best online zoo I’ve met. My son delighted very much
+                      ljves to watch gouillas. Online zoo is one jf the ways to
+                      instill a love for animals.The best online zoo I’ve met. My
+                      son delighted very much ljves to watch gouillas. Online zoo
+                      is one jf the ways to instill a love for animals.
+                    </p>
+                  </div>
+                </div>
+                </div>  
+  
+              </li>
+              <li class="testimonials__card">
                 <div class="testimonials__card-bg">
                   <div class="testimonials__card-header">
                     <img
@@ -368,18 +464,44 @@
                     My son delighted very much ljves to watch gouillas. The best
                     online zoo I’ve met. My son delighted very much ljves to
                     watch gouillas. Online zoo is one jf the ways to instill a
-                    love for animals.The best online zoo I’ve met. My son
-                    delighted very much ljves to watch gouillas. Online zoo is
-                    one jf the ways to instill a love for animals. The best
-                    online zoo I’ve met. My son delighted very much ljves to
-                    watch gouillas. Online zoo is one jf the ways to instill a
-                    love for animals.The best online zoo I’ve met. My son
-                    delighted very much ljves to watch gouillas. Online zoo is
-                    one jf the ways to instill a love for animals.
+                    love for animals.The best online zoo I’ve met.
                   </p>
                 </div>
-              </div>
-              <div class="testimonials__card">
+                <div class="pop__block" display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header">
+                      <img
+                        src="assets/icons/testimonial2.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">Oskar Samborsky</h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Yesterday
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc">
+                      Online zoo is one jf the ways to instill a love for
+                      animals.The best online zoo I’ve met. My son delighted very
+                      much ljves to watch gouillas. Online zoo is one jf the ways
+                      to instill a love for animals.The best online zoo I’ve met.
+                      My son delighted very much ljves to watch gouillas. The best
+                      online zoo I’ve met. My son delighted very much ljves to
+                      watch gouillas. Online zoo is one jf the ways to instill a
+                      love for animals.The best online zoo I’ve met.
+                    </p>
+                  </div>
+                </div>
+                </div>
+  
+              </li>
+              <li class="testimonials__card">
                 <div class="testimonials__card-bg">
                   <div class="testimonials__card-header">
                     <img
@@ -408,8 +530,45 @@
                     one jf the ways to instill a love for animals.
                   </p>
                 </div>
-              </div>
-              <div class="testimonials__card">
+                <div class="pop__block  " display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header">
+                      <img
+                        src="assets/icons/testimonial3.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">
+                          Fredericka Michelin
+                        </h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Yesterday
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc">
+                      The best online zoo I've met. My son delighted very much
+                      ljves to watch gouillas. Online zoo is one jf the ways to
+                      instill a love for animals.The best online zoo I've met. My
+                      son delighted very much ljves to watch gouillas. Online zoo
+                      is one jf the ways to instill a love for animals. The best
+                      online zoo I've met. My son delighted very much ljves to
+                      watch gouillas. Online zoo is one jf the ways to instill a
+                      love for animals.The best online zoo I've met. My son
+                      delighted very much ljves to watch gouillas. Online zoo is
+                      one jf the ways to instill a love for animals.
+                    </p>
+                  </div>
+                </div>
+                </div>
+  
+              </li>
+              <li class="testimonials__card">
                 <div class="testimonials__card-bg">
                   <div class="testimonials__card-header">
                     <img
@@ -436,19 +595,378 @@
                     one jf the ways to instill a love for animals.
                   </p>
                 </div>
-              </div>
-            </div>
+                <div class="pop__block  " display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header">
+                      <img
+                        src="assets/icons/testimonial4.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">Mila Riksha</h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Yesterday
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc">
+                      The best online zoo I've met. My son delighted very much
+                      ljves to watch gouillas. Online zoo is one jf the ways to
+                      instill a love for animals.The best online zoo I've met. My
+                      son delighted very much ljves to watch gouillas. Online zoo
+                      is one jf the ways to instill a love for animals. The best
+                      online zoo I've met. My son delighted very much ljves to
+                      watch gouillas. Online zoo is one jf the ways to instill a
+                      love for animals.The best online zoo I've met. My son
+                      delighted very much ljves to watch gouillas. Online zoo is
+                      one jf the ways to instill a love for animals.
+                    </p>
+                  </div>
+                </div>
+                </div>
+  
+              </li>
+              <li class="testimonials__card">
+                <div class="testimonials__card-bg">
+                  <div class="testimonials__card-header">
+                    <img
+                      src="assets/icons/testimonial5.svg"
+                      alt="user icon"
+                      class="testimonials__card-img" />
+                    <div class="testimonials__card-texts">
+                      <h4 class="testimonials__card-name">Andrew Jorge</h4>
+                      <p class="testimonials__card-stat text-small">
+                        Local Austria<span>·</span>Today
+                      </p>
+                    </div>
+                  </div>
+                  <p class="testimonials__card-desc">
+                    A couple of months back I thought applying for a job at the University of Cambridge is a save bet given that we are all EU citizens, me coming from Berlin, Germany. People from the department were very supportive, welcoming, and kind helping me and my family to settle. 
+                  </p>
+                </div>
+                <div class="pop__block  " display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header">
+                      <img
+                        src="assets/icons/testimonial5.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">Andrew Jorge</h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Today
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc">
+                      A couple of months back I thought applying for a job at the University of Cambridge is a save bet given that we are all EU citizens, me coming from Berlin, Germany. People from the department were very supportive, welcoming, and kind helping me and my family to settle. 
+                    </p>
+                  </div>
+                </div>
+                </div>
+  
+              </li>
+              <li class="testimonials__card">
+                <div class="testimonials__card-bg">
+                  <div class="testimonials__card-header">
+                    <img
+                      src="assets/icons/testimonial6.svg"
+                      alt="user icon"
+                      class="testimonials__card-img" />
+                    <div class="testimonials__card-texts">
+                      <h4 class="testimonials__card-name">Nick Salivan</h4>
+                      <p class="testimonials__card-stat text-small">
+                        Local Austria<span>·</span>Today
+                      </p>
+                    </div>
+                  </div>
+                  <p class="testimonials__card-desc card__active">
+                    Welcome to the webpages of the Postdocs of Zoology. The Zoology Department hosts around 90 postdoctoral and early career researchers from around the world, and we are a diverse and inclusive community. Postdocs contribute actively to the research and teaching in Zoology, and are an integral part of the Zoology Department family.
+                  </p>
+                </div>
+                <div class="pop__block  " display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header">
+                      <img
+                        src="assets/icons/testimonial6.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">Nick Salivan</h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Today
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc card__active">
+                      Welcome to the webpages of the Postdocs of Zoology. The Zoology Department hosts around 90 postdoctoral and early career researchers from around the world, and we are a diverse and inclusive community. Postdocs contribute actively to the research and teaching in Zoology, and are an integral part of the Zoology Department family.
+                    </p>
+                  </div>
+                </div>
+                </div>
+  
+              </li>
+              <li class="testimonials__card">
+                <div class="testimonials__card-bg">
+                  <div class="testimonials__card-header">
+                    <img
+                      src="assets/icons/testimonial7.svg"
+                      alt="user icon"
+                      class="testimonials__card-img" />
+                    <div class="testimonials__card-texts">
+                      <h4 class="testimonials__card-name">
+                        Anna Kawalski
+                      </h4>
+                      <p class="testimonials__card-stat text-small">
+                        Local Austria<span>·</span>Yesterday
+                      </p>
+                    </div>
+                  </div>
+                  <p class="testimonials__card-desc">
+                    Compiled by members of the Zoology Postdoc Committee, these webpages are intended as an information resource for both long-standing and soon-to-be postdocs of the Department - and anybody in between. If there is any information that you think is lacking, then, please do contact us.
+                  </p>
+                </div>
+                <div class="pop__block  " display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header">
+                      <img
+                        src="assets/icons/testimonial7.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">
+                          Anna Kawalski
+                        </h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Yesterday
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc">
+                      Compiled by members of the Zoology Postdoc Committee, these webpages are intended as an information resource for both long-standing and soon-to-be postdocs of the Department - and anybody in between. If there is any information that you think is lacking, then, please do contact us.
+                    </p>
+                  </div>
+                </div>
+                </div>
+  
+              </li>
+              <li class="testimonials__card">
+                <div class="testimonials__card-bg">
+                  <div class="testimonials__card-header">
+                    <img
+                      src="assets/icons/testimonial8.svg"
+                      alt="user icon"
+                      class="testimonials__card-img" />
+                    <div class="testimonials__card-texts">
+                      <h4 class="testimonials__card-name">Maria Roksha</h4>
+                      <p class="testimonials__card-stat text-small">
+                        Local Austria<span>·</span>Yesterday
+                      </p>
+                    </div>
+                  </div>
+                  <p class="testimonials__card-desc">
+                    All Research Fellows have a mentor, who provides support and advice about the transition to becoming an independent group leader. We will help you prepare your first grant applications, and encourage you to take on PhD students (where the Department has discretion on graduate funding, it strives to support young Research Fellows and new staff).
+                  </p>
+                </div>
+                <div class="pop__block  " display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header">
+                      <img
+                        src="assets/icons/testimonial8.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">Maria Roksha</h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Yesterday
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc">
+                      All Research Fellows have a mentor, who provides support and advice about the transition to becoming an independent group leader. We will help you prepare your first grant applications, and encourage you to take on PhD students (where the Department has discretion on graduate funding, it strives to support young Research Fellows and new staff).
+                    </p>
+                  </div>
+                </div>
+                </div>
+  
+              </li>
+              <li class="testimonials__card">
+                <div class="testimonials__card-bg">
+                  <div class="testimonials__card-header">
+                    <img
+                      src="assets/icons/testimonial9.svg"
+                      alt="user icon"
+                      class="testimonials__card-img" />
+                    <div class="testimonials__card-texts">
+                      <h4 class="testimonials__card-name">Max Joj</h4>
+                      <p class="testimonials__card-stat text-small">
+                        Local Austria<span>·</span>Today
+                      </p>
+                    </div>
+                  </div>
+                  <p class="testimonials__card-desc">
+                    For many fellowship schemes, the final selection is through an interview. The success of many of our Fellows has shown that the best way to prepare for these interviews is through mock interviews with Department of Zoology staff, who are experienced at sitting on fellowship and grant panels.
+                  </p>
+                </div>
+                <div class="pop__block  " display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header">
+                      <img
+                        src="assets/icons/testimonial9.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">Max Joj</h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Today
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc">
+                      For many fellowship schemes, the final selection is through an interview. The success of many of our Fellows has shown that the best way to prepare for these interviews is through mock interviews with Department of Zoology staff, who are experienced at sitting on fellowship and grant panels.
+                    </p>
+                  </div>
+                </div>
+                </div>
+  
+              </li>
+              <li class="testimonials__card">
+                <div class="testimonials__card-bg">
+                  <div class="testimonials__card-header">
+                    <img
+                      src="assets/icons/testimonial10.svg"
+                      alt="user icon"
+                      class="testimonials__card-img" />
+                    <div class="testimonials__card-texts">
+                      <h4 class="testimonials__card-name">Odry San</h4>
+                      <p class="testimonials__card-stat text-small">
+                        Local Austria<span>·</span>Today
+                      </p>
+                    </div>
+                  </div>
+                  <p class="testimonials__card-desc">
+                    Many of our academic staff have considerable expertise in writing and assessing fellowship applications, having either held these awards or served on the panels that assess and award them. You will be able to draw on this rich resource for guidance and feedback throughout the process, from the initial drafting to eventual honing of your proposal.
+                  </p>
+                </div>
+                <div class="pop__block  " display="none">
+                  <button class="btn-x-box2" type="reset">
+                    <img src="assets/icons/x_icon.svg" alt="close" />
+                  </button>
+                <div class="testimonials__card-double  ">
+    
+                  <div class="testimonials__card-bg">
+                    <div class="testimonials__card-header">
+                      <img
+                        src="assets/icons/testimonial10.svg"
+                        alt="user icon"
+                        class="testimonials__card-img" />
+                      <div class="testimonials__card-texts">
+                        <h4 class="testimonials__card-name">Odry San</h4>
+                        <p class="testimonials__card-stat text-small">
+                          Local Austria<span>·</span>Today
+                        </p>
+                      </div>
+                    </div>
+                    <p class="testimonials__card-desc">
+                      Many of our academic staff have considerable expertise in writing and assessing fellowship applications, having either held these awards or served on the panels that assess and award them. You will be able to draw on this rich resource for guidance and feedback throughout the process, from the initial drafting to eventual honing of your proposal.
+                    </p>
+                  </div>
+                </div>
+               </div>
+  
+              </li>
+              <li class="testimonials__card">
+                <div class="testimonials__card-bg">
+                  <div class="testimonials__card-header">
+                    <img
+                      src="assets/icons/testimonial11.svg"
+                      alt="user icon"
+                      class="testimonials__card-img" />
+                    <div class="testimonials__card-texts">
+                      <h4 class="testimonials__card-name">
+                        Angelicka Machelin
+                      </h4>
+                      <p class="testimonials__card-stat text-small">
+                        Local Austria<span>·</span>Yesterday
+                      </p>
+                    </div>
+                  </div>
+                  <p class="testimonials__card-desc">
+                    Very nice, cool, lots of animals, all well maintained, beautiful. Lots of greenery, places to rest, the children love it! Be sure to go again! But is a little expensive.
+                  </p>
+                </div>
+                <div class="pop__block  " display="none">
+                  <button class="btn-x-box2" type="reset">
+                   <img src="assets/icons/x_icon.svg" alt="close" />
+                     </button>
+            
+                          <div class="testimonials__card-double  ">
+                            <div class="testimonials__card-bg">
+                              <div class="testimonials__card-header">
+                                <img
+                                  src="assets/icons/testimonial11.svg"
+                                  alt="user icon"
+                                  class="testimonials__card-img" />
+                                <div class="testimonials__card-texts">
+                                  <h4 class="testimonials__card-name">
+                                    Angelicka Machelin
+                                  </h4>
+                                  <p class="testimonials__card-stat text-small">
+                                    Local Austria<span>·</span>Yesterday
+                                  </p>
+                                </div>
+                              </div>
+                              <p class="testimonials__card-desc">
+                                Very nice, cool, lots of animals, all well maintained, beautiful. Lots of greenery, places to rest, the children love it! Be sure to go again! But is a little expensive.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+            
+              </li>
+                              
 
+            </ul>
             <div class="testimonials__scroller">
               <input
                 type="range"
                 name="testimonials"
                 min="0"
-                max="100"
-                value="1"
-                step="12.5"
+                max="8"
+                value="0"
+                step="1"
                 id="testimonials-slider"
-                class="testimonials__slider" />
+                class="testimonials__slider next prev" />
             </div>
 
             <div class="testimonial-foot">
@@ -466,7 +984,7 @@
         </section>
       </main>
       <footer class="footer">
-        <section class="footer-part">
+        <section class="footer-part" id="footer-part">
           <div class="contacts-part">
             <div class="icon-part">
               <h1 class="logo-h1 logo-footer">
@@ -553,6 +1071,10 @@
           </div>
         </section>
       </footer>
+     
     </div>
+    <div class="overlay"></div>
+   
+    <script src="script.js"></script>
   </body>
 </html>
